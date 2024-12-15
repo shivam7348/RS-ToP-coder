@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!-- <style>
+            .display{
+                width: 10%;
+                height: 10%;
+            }
+        </style> -->
+    </head>
+    <body>
+
+        <div class="container">
+            <h1>
+                Password genrator
+            </h1>
+
+            <div class="display-container">
+
+                <input readonly placeholder="enter your name"
+                    data-passworddisplay>
+
+                <button>
+                    <span data-copying></span>
+                    <img src="assets/copy.214x256.png" alt width="20"
+                        height="20">
+                </button>
+
+            </div>
+            <div class="input-container">
+                <div class="length-container">
+                    <p>Password Length</p>
+                    <p data-length-number>0</p>
+
+                </div>
+                <!-- Slider -->
+                <input type="range" min="1" max="20" step="1" dta-lengthSlider>
+                <!-- CheckBox -->
+
+                <div>
+                    <input type="checkbox" id="upperCase">
+                    <label for="upperCase">Includes Uppercase letters</label>
+
+                </div>
+                <div>
+                    <input type="checkbox" id="lowwercse">
+                    <label for="upperCase">Includes lowwercse letters</label>
+
+                </div>
+                <div>
+                    <input type="checkbox" id="symbol">
+                    <label for="upperCase">Includes symbol letters</label>
+
+                </div>
+                <div>
+                    <input type="checkbox" id="numbers">
+                    <label for="upperCase">Includes numbers </label>
+
+                </div>
+
+                <!-- strength section  -->
+
+                <div class="strength">
+                    <p>strength</p>
+                    <div data-indicator>
+
+                    </div>
+                </div>
+
+                <!-- gentertae password -->
+
+                <button class="genrate-password">GENRATE PASSWORDS</button>
+            </div>
+        </div>
+
+    </body>
+</html>
